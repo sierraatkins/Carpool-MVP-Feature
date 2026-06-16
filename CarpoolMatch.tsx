@@ -1,11 +1,13 @@
 import type { Match } from "./sample_carpool_data.ts";
 
+// declare expected property types
 interface Props {
   match: Match;
   onApprove: () => void;
   onReject: () => void;
 }
 
+// Displays the current match information with approve and reject buttons
 export default function CarpoolMatch({match, onApprove, onReject}: Props) {
   return (
     <div className="max-w-md">
